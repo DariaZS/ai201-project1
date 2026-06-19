@@ -1,0 +1,27 @@
+Point Values, Lottery Numbers & Selection Appointments
+
+Room Selection appointments are determined by lottery and a student's class standing. Every student is assigned a point value. Group point value is the average of each individual group member. Each individual or group receives one lottery number weighted to their point value. Within the same point value bands, lottery numbers are randomly generated to ensure fairness. Lottery numbers determine the order of Room Selection appointments.
+
+Students with higher class standing have a higher point value and are assigned a lower lottery number and an earlier Room Selection appointment time.
+
+Point values, lottery numbers, and selection appointments are assigned only to students with guaranteed housing status. Students with non-guaranteed housing are not eligible to participate in Room Selection.
+
+Point Values
+
+Students are assigned a point value based on seniority so that rising seniors receive the highest point values. Priority is assigned as follows: Rising Seniors receive 40 points. Rising Juniors receive 30 points. Rising Sophomores receive 20 points. Group point value is the average value of all Columbia group members, and rising Barnard College seniors are assigned 35 points. For example, a group made of six rising juniors and a group made of 10 rising juniors will both have a point value of 30 because group point value is determined by group composition, not size.
+
+Approved Leaves of Absence and Point Value
+
+If a student with guaranteed housing takes an approved leave of absence, their point value may be impacted. Students will see their point value during the Room Selection registration process.
+
+Mixed Point Groups
+
+Mixed point groups refer to groups that are comprised of students from different classes. Groups are assigned a single point value based on the average point value of all individual group members. For example, a group of three rising sophomores and one rising junior will have a group point value of 22.5, calculated by finding the average of all group members' individual point values: 20 plus 20 plus 20 plus 30 divided by 4. A group of four rising seniors and two rising juniors will have a group point value of 36.6, calculated as 40 plus 40 plus 40 plus 40 plus 30 plus 30 divided by 6. Groups can only be comprised of students in adjacent classes, such as rising senior with rising junior, or rising junior with rising sophomore.
+
+Lottery Numbers
+
+After the registration period is over, each individual or group is assigned a randomly selected, computer-generated lottery number. Groups receive one lottery number. Individuals or groups with lottery numbers closer to 1 will have appointment times towards the beginning of Room Selection, whereas lottery numbers closer to 5000 will have appointment times towards the end of Room Selection. Lottery numbers are typically assigned as follows: Rising seniors with 40 points receive lottery numbers 1 through 1000. Mixed-point groups of rising seniors and rising juniors with 30.1 to 39.9 points receive lottery numbers 1001 through 2000. Rising juniors with 30 points receive lottery numbers 2001 through 3000. Mixed-point groups of rising juniors and rising sophomores with 20.1 to 29.9 points receive lottery numbers 3001 through 4000. Rising sophomores with 20 points receive lottery numbers 4001 through 5000. Every group member receives the same lottery number. Students will receive an email when lottery numbers are posted in the Housing Portal.
+
+Appointment Times
+
+Each individual or group is then assigned a specific appointment date and time to choose their room. Groups will have one appointment time and selections will be made by the group leader. Students' and groups' appointment times are posted to the Registration Summary page of the Housing Application in the Housing Portal after registration has closed. Rooms can be selected any time between a student's assigned appointment time and the end of Room Selection. However, students should select as early as possible in order to have the most options. Students will receive an email when appointment times become available.

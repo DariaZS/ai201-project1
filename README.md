@@ -72,6 +72,22 @@
 
 ---
 
+## Sample Chunks
+
+| # | Source document | Chunk text |
+|---|----------------|------------|
+| 1 | cs_faq.txt | FAQ for Currently Enrolled Undergraduates \| Department of Computer Science, Columbia University. Have a question or concern about your program? You're in the right place! GENERAL ADVISING & MAJOR DECLARATION When can I declare CS as my major? |
+| 2 | cs_faq.txt | When can I declare CS as my major? Are there any minimum requirements that I need to meet before declaring the major? The major declaration period occurs during your sophomore year: in the fall semester for SEAS students and the spring semester for Columbia College, GS, and Barnard students. |
+| 3 | bwog_housing_strategy.txt | The only way to bring up your lottery number is to have rising junior(s) in your group, as they have a higher point value. Lottery numbers are otherwise randomly generated within your lottery number range. All beds in an apartment or double must be filled in order to select into a space. |
+| 4 | ods_registration.txt | Disability Services reviews each request and determines eligibility for accommodations and services. The review process does not begin until your completed registration form and your disability documentation are received. The review process takes approximately three weeks. |
+| 5 | dining_halls_guide.txt | John Jay - Biggest, decent selection, has meatless mondays (which is tragic imo). JJ's Diner - Smallest, is basically just junk food, is open very late. Ferris Booth Commons - Generally has the nicest food, always decently busy. |
+
+**Total chunk count: 201 chunks across 10 documents.**
+
+This falls comfortably within the healthy range (more than 50, less than 2,000), indicating chunk size is reasonable — not so large that topics get diluted, not so small that individual chunks lose meaning.
+
+Each chunk above is a complete, self-contained thought ending on a real sentence boundary. My first implementation used raw character-count slicing, which cut chunks mid-word (e.g., "Are ther" instead of "Are there"). I rewrote `chunk_text()` to group whole sentences instead, fixing this issue.
+
 ## Embedding Model
 
 <!-- Name the embedding model you used and explain your choice.
