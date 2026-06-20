@@ -104,42 +104,36 @@ Each chunk above is a complete, self-contained thought ending on a real sentence
 
 ## Retrieval Test Results
 
-<!-- Run these 3 queries through your retrieval system and record the top returned chunks.
-     For at least 2 of the 3, explain why the returned chunks are relevant to the query.
-     Results must be text — not screenshots. -->
-
-**Query 1:**
+**Query 1:** How does the Columbia housing lottery actually work?
 
 Top returned chunks:
--
--
--
+- (source: bwog_housing_strategy, distance: 0.381) "Columbia Housing Strategy For Rising Sophomores. Housing can be stressful. Between navigating housing groups to understanding just how the housing lottery works, it can be overwhelming, especially as a rising sophomore..."
+- (source: housing_lottery_points, distance: 0.449) "Every group member receives the same lottery number. Students will receive an email when lottery numbers are posted in the Housing Portal. Appointment Times: Each individual or group is then assigned a specific appointment date and time..."
+- (source: housing_lottery_points, distance: 0.500) "Lottery numbers determine the order of Room Selection appointments. Students with higher class standing have a higher point value and are assigned a lower lottery number and an earlier Room Selection appointment time..."
 
-Relevance explanation:
+Relevance explanation: All three top results directly explain how the lottery mechanism works — point values determining lottery number ranges, and lottery numbers determining appointment order. The top result blends official process information with student-written framing, while results 2 and 3 come from the official Columbia Housing point-values page. Together they would let an LLM construct an accurate, well-sourced answer.
 
 ---
 
-**Query 2:**
+**Query 2:** What is the best dining hall at Columbia?
 
 Top returned chunks:
--
--
--
+- (source: dining_halls_guide, distance: 0.272) "There are several themed dinners hosted by Columbia Dining throughout the year, such as French Night, Taste of the Caribbean, Campout... There is also the Battle of the Dining Halls, a friendly competition..."
+- (source: dining_halls_guide, distance: 0.330) "Dining locations on Columbia's main campus include Blue Java Cafe at Butler Library, Mudd Hall, and Uris Hall; Lenfest Cafe in Jerome Greene Hall; The Fac Shack near the John Jay gates; Ferris Booth Commons..."
+- (source: dining_halls_guide, distance: 0.337) "Your Guide to the Best Dining Halls at Columbia. Eating on campus is a convenient way to consume a delicious variety of foods and meals from different cuisines..."
 
-Relevance explanation:
+Relevance explanation: All three results come from the dedicated dining halls guide and describe dining hall features, events, and locations — directly relevant to a "best dining hall" question. None of the results pull from an unrelated source, which confirms the embedding model is correctly distinguishing dining content from the other 9 sources in the corpus.
 
 ---
 
-**Query 3:**
+**Query 3:** How do I register for disability accommodations at Columbia?
 
 Top returned chunks:
--
--
--
+- (source: ods_registration, distance: 0.188) "Who is eligible? Any Columbia student with a disability or temporary injury on the Morningside, Manhattanville, and Medical campuses is eligible to submit requests for academic or campus accommodations from Disability Services..."
+- (source: ods_registration, distance: 0.193) "Register with Disability Services - Columbia Health. Columbia Health provides Disability Accommodations for students registered with Disability Services (DS)..."
+- (source: spectator_ods_guide, distance: 0.258) "Although Disability Services provides a step-by-step breakdown on how to register, Spectrum is here to help you with the process by simplifying it even further..."
 
-Relevance explanation:
-
----
+Relevance explanation: This query produced the strongest retrieval of all three tests, with the top result scoring 0.188. Results 1 and 2 come from the official registration page and answer the question directly. Result 3 comes from a different source (the Spectator student guide), showing the system can pull complementary perspectives — official process plus student-friendly explanation — for the same question.
 
 ## Grounded Generation
 
