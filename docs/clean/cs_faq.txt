@@ -1,199 +1,55 @@
-FAQ for Currently Enrolled Undergraduates | Department of Computer Science, Columbia University
-FAQ for Currently Enrolled Undergraduates – Department of Computer Science, Columbia University
-Skip to content
-FAQs for Current Undergrads
-Have a question or concern about your program? You’re in the right place! If you can’t find the answer you are looking for here, or on our
-Undergraduate Homepage
-, email
-CS Advising
-.
-GENERAL ADVISING & MAJOR DECLARATION
-When can I declare CS as my major? Are there any minimum requirements that I need to meet before declaring the major?
-The major declaration period occurs during your sophomore year: in the fall semester for SEAS students and the spring semester for Columbia College, GS, and Barnard students. The department has no minimum requirements that you need to meet before declaring the major or minor, though we do recommend that you start taking the introductory CS courses (ENGI E1006, COMS W1004) during your freshman year.
-How do I declare CS as my major?
-Each school has a different process for this. SEAS and CC students should discuss with their CSA Advising Dean. GS students should speak with their school advisors. Barnard students should use Slate.
-Who is my CS Faculty Advisor?
-All CS majors and concentrators are assigned a CS Faculty Advisor. You can find yours by clicking
-here.
-If you have general or administrative questions, please email CS Advising at
-ug-advising@cs.columbia.edu
-.
+FAQ for Currently Enrolled Undergraduates - Department of Computer Science, Columbia University
+
+Have a question or concern about your program? If you can't find the answer you are looking for here, or on the Undergraduate Homepage, email CS Advising.
+
+GENERAL ADVISING AND MAJOR DECLARATION
+
+When can I declare CS as my major? Are there any minimum requirements that I need to meet before declaring the major? The major declaration period occurs during your sophomore year: in the fall semester for SEAS students and the spring semester for Columbia College, GS, and Barnard students. The department has no minimum requirements that you need to meet before declaring the major or minor, though we do recommend that you start taking the introductory CS courses (ENGI E1006, COMS W1004) during your freshman year.
+
+How do I declare CS as my major? Each school has a different process for this. SEAS and CC students should discuss with their CSA Advising Dean. GS students should speak with their school advisors. Barnard students should use Slate.
+
+Who is my CS Faculty Advisor? All CS majors and concentrators are assigned a CS Faculty Advisor. If you have general or administrative questions, please email CS Advising at ug-advising@cs.columbia.edu.
+
 COURSE WAIVERS, IMPORTS, SUBSTITUTIONS, AND OTHER EXCEPTIONS
-Can I waive a required CS course?
-If you already know the material in one of the required courses, either through taking another course elsewhere or through work/project experience, it may be possible to waive out of that course. Please get contact the instructor of the course you wish to waive to discuss this. You can also submit course imports for review, via Mice (Mice – Student Menu – Course Imports – Upload transcript and syllabus – Assign to correct instructor – submit). The instructor will determine whether your prior knowledge is sufficient to satisfy that course requirement. If your waiver request is approved outside of Mice, please forward the approval email to
-ug-advising@cs.columbia.edu
-so we can maintain a record of the waiver.
-Please note that there is no actual point value to a course waiver. When you waive out of a course, you will still need to take a replacement course to meet the minimum credit requirement for the major.
-How many credits can I transfer into Columbia and count toward my CS major or Minor?
-CS Major
-: Up to four transfer courses are accepted toward the major. Calculus, linear algebra, and probability/statistics courses can be transferred in addition to the four-course limits.
-CS-MATH Major
-: Up to three transfer courses are accepted toward the CS-Math major. Calculus courses can be transferred in addition to the three-course limit (with the approval of the Math department). Courses replaced by AP exams do not count towards the three-course limit. More information can be found in the Math Department’s Bulletin.
-Minor:
-Up to two transfer courses are accepted toward the minor. A transfer course in linear algebra or probability/statistics counts as one of the two allowed transfers.
-AP
-: The department grants 3 points for a score of 4 or 5 on the AP Computer Science A exam, along with an exemption from
-COMS W1004
-Introduction to Computer Science and Programming in Java. However, we recommend that you take COMS W1004 before taking COMS W3134/W3137 Data Structures if you received a score of 4 or have not programmed in Java recently.
-Barnard students
-do not earn credit for AP and should consult their Barnard Advisor.
-I plan to take some CS courses at another school. Can I transfer those credits into Columbia and count them toward my CS program?
-First, consult your school’s Advising Dean to understand your school’s transfer policy. To count a non-Columbia course toward your CS major/minor, we require a minimum grade of B or higher and for the course to be approved as an equivalent by the instructor who teaches the course here. To then count the course & points toward your CS major requirements, you will need to import the course on Mice and attach your syllabus (Mice – Student Menu – Course Import) and transcript once taken. The corresponding Columbia CS faculty member will review the course you took and the CU equivalent to determine if the import can be approved.
-If you have obtained approval for a course import over email, you must forward that approval to
-CS Advising
-so we have a record. Barnard students should forward any emailed approvals to their advisor to ensure their degree audit is updated.
-Please note that unless you have gotten approval from your Advising Dean, there is no actual point value to a course waiver. When you waive out of a course, you will still need to take a replacement course to meet the minimum credit requirement for the major.
-Can I take electives that are outside of the CS department?
-You may choose your GTE (SEAS only) from outside CS, from a SEAS department or one of the exceptions listed on the Quick Guide: Astronomy, Biomedical Informatics, Biological Sciences, Chemistry, Earth and Environmental Sciences, Ecology, Evolution and Environmental Biology, Mathematics, Physics, Psychology, Statistics, and Economics. Courses must be at least 3 credits and at 3000 or above.
-Can I substitute any courses in the minor?
-No substitutions are allowed for the CS minor. See:
-http://bulletin.engineering.columbia.edu/undergraduate-minors
-More specifically:
-No substitutions or changes of any kind from the approved minors are permitted (see lists below). No appeal for changes will be granted. Please note that the same courses may not be used to satisfy the requirements of more than one minor. No courses taken for pass/fail may be counted for a minor. The minimum GPA for the minor is 2.0. Departments outside the Engineering School have no responsibility for non-Engineering minors offered by Engineering.
+
+Can I waive a required CS course? If you already know the material in one of the required courses, either through taking another course elsewhere or through work/project experience, it may be possible to waive out of that course. Please contact the instructor of the course you wish to waive to discuss this. You can also submit course imports for review via Mice. The instructor will determine whether your prior knowledge is sufficient to satisfy that course requirement. Please note that there is no actual point value to a course waiver. When you waive out of a course, you will still need to take a replacement course to meet the minimum credit requirement for the major.
+
+How many credits can I transfer into Columbia and count toward my CS major or Minor? For the CS Major, up to four transfer courses are accepted toward the major. Calculus, linear algebra, and probability/statistics courses can be transferred in addition to the four-course limit. For the CS-MATH Major, up to three transfer courses are accepted, with calculus courses transferable in addition to the three-course limit, subject to Math department approval. For the Minor, up to two transfer courses are accepted, with a transfer course in linear algebra or probability/statistics counting as one of the two allowed transfers. For AP credit, the department grants 3 points for a score of 4 or 5 on the AP Computer Science A exam, along with an exemption from COMS W1004. However, students are recommended to take COMS W1004 before COMS W3134/W3137 Data Structures if they received a score of 4 or have not programmed in Java recently. Barnard students do not earn credit for AP and should consult their Barnard Advisor.
+
+Can I take electives that are outside of the CS department? You may choose your GTE (SEAS only) from outside CS, from a SEAS department, or from one of the exceptions listed on the Quick Guide, including Astronomy, Biomedical Informatics, Biological Sciences, Chemistry, Earth and Environmental Sciences, Ecology, Evolution and Environmental Biology, Mathematics, Physics, Psychology, Statistics, and Economics. Courses must be at least 3 credits and at 3000 level or above.
+
+Can I substitute any courses in the minor? No substitutions are allowed for the CS minor. No appeal for changes will be granted. The same courses may not be used to satisfy the requirements of more than one minor. No courses taken for pass/fail may be counted for a minor. The minimum GPA for the minor is 2.0.
+
 COURSE PLANNING
-Can I take Linear Algebra instead of Computational Linear Algebra?
-Options for the Linear Algebra requirement are: COMS 3251, APMA 3101, APAM 2101, MATH 2010 or MATH 2015.
-Can I count COMS 3136: Essential Data Structures for the Data Structures requirement?
-No. You must either take “Data Structures in Java” (COMS 3134) or “Honors Data Structures and Algorithms” (COMS 3137) for fulfilling the Data Structures requirement.
-Which CS courses will be offered each semester?
-We can’t guarantee more than 3 months in advance that a certain course will be offered during a specific semester since course scheduling often depends on instructor availability. We try to keep our schedules as consistent as possible. You can look back at
-course listings
-and in Vergil from previous years to get a sense of what we offer each fall and spring. Please check Vergil for the most updated course offerings.
-How can I create a program plan for my major requirements?
-We have degree progress checklists on our
-general undergraduate info page
-. We recommend that you use these checklists to plan out your program and figure out which courses you still need to take to complete your major requirements. You can also use Stellic. Feel free to send your checklist to
-CS Advising
-to request a course plan review. Please keep in mind that CS courses are in very high demand, so you may not be able to get into your top choices each semester. Your program plan should be flexible and include alternate options.
-Which courses can I count as General Technical Electives? (SEAS only)
-Generally, all SEAS courses will count as GTEs. You may choose your GTE from outside CS or within CS, from a SEAS department or one of the exceptions listed on the Quick Guide: Astronomy, Biomedical Informatics, Biological Sciences, Chemistry, Earth and Environmental Sciences, Ecology, Evolution and Environmental Biology, Mathematics, Physics, Psychology, Statistics, and Economics. Courses must be at least 3 credits and at 3000 or above.
-Can I take a course through CVN or one of the CS department's flipped/hybrid course offerings?
-CVN courses are not available to undergraduate students. SEAS undergraduates are permitted to count up to 1 flipped/hybrid course (any course with a section H01) per semester toward their degree – Consult your CSA Dean. Students in CC, GS, or Barnard cannot count flipped/hybrid courses toward their degrees.
-I got a 'D' in a required course. Do I need to retake it?
-If you are in SEAS, GS, or CC, we will grant a one-time-only exception to count one D toward your major requirements. If this is your second D, you will need to retake the course. Barnard does not allow for a D to be counted for any major or minor, including Computer Science.
-Can I take a course Pass/Fail and count it towards my major requirements?
-Unless there is a university-wide exception, students are NOT permitted to count courses taken P/F toward their major.
-Is studying abroad possible for CS majors?
-Studying abroad is possible for CS majors but requires careful planning. It is often difficult to fulfill major requirements at many universities abroad, so care must be taken when choosing where to go. You will need to speak with the current instructors of the Columbia courses you believe are equivalent to the courses you hope to take abroad to ensure the courses are confirmed to be equivalent.
-Then, you will need to speak with your CS Faculty Advisor or CS Advising to ensure that the course equivalencies will fulfill your CS major requirements. Most students who study abroad feel that the rewards outweigh the logistical difficulties involved. If you are interested in studying abroad, it is best to start planning with your Advising Dean by the end of your first year.
-Study abroad courses that have been approved by your CS Faculty Advisor and Advising Dean are eligible to count toward your CS major if you earn a C or higher.
-Can I take COMS W3157 and CSEE W3827 at the same time?
-This seems to be a matter of personal preference. Some students suggest the courses complement one another and are interesting to take together. Others prefer to take COMS W3157 first to be better prepared for the assembly language programming in the second half of CSEE W3827.
-Can I double count a CS major course in my minor?
-If you are a SEAS student, you can double-count a major course toward your minor. If you are a Barnard student, double-counting is not allowed because Barnard does not allow double-counting. If you are a CC or GS student, you may double-count the following CS requirements with another major, minor, or concentration:
-COMS W1004
-Any calculus courses (including Honors Math A and B)
-One Linear Algebra course
-One Probability/Statistics course
-What is the difference between Data Structures and Honors Data Structures?
-Honors Data Structures is worth 4 points and has a mandatory recitation session in addition to lectures. The honors course typically covers a few additional topics, such as data structures and algorithms in functional programming languages.
-How can I get involved in research?
-The CS Department holds a Research Project Fair during the first week of each fall and spring semester. You can attend this fair to explore available research opportunities in the department each semester. You can also reach out directly to faculty members with whom you are interested in working to inquire about research opportunities that they may have available in their lab.
-Current Research Opportunities
-are posted online, these can be for credit or pay.
-How can I do a research project for credit or write a senior thesis?
-First, you need to find a CS faculty member who will agree to serve as your research advisor. They should then give you the direct link to register for the Thesis or Research course
-(e.g. COMS W3902, COMS W3998, COMS W4901, COMS E6901).
-You can count a maximum of 6 points of research/project credit toward your major.
-Do I have to take ENGI 1006? What if I already know Python?
-In general, only SEAS students must take ENGI 1006. SEAS students who can demonstrate that they are familiar with the course content can request to waive the course. However, they need to make up the 3 credit points by taking an extra 3000 or 4000-level CS course. Course waivers for ENGI 1006 are on an exceptional basis and are not guaranteed.
-Can I take COMS 3134: Data Structures and COMS W3203: Discrete Math at the same time?
-Yes.
-I already know Java, can I go straight into COMS 3134?
-Maybe, speak to the course instructor first.
-Can I take COMS 3134: Data Structures and COMS W3157: Advanced Programming at the same time?
-It is recommended that you take Data Structures before taking Advanced Programming.
-How can I find a tutor for a CS course?
-Email
-CS Advising
-and we can provide you with a list of available tutors. You may also ask your instructor/TA for advice on tutors.
-I already know Discrete Math. Can I skip COMS W3203 and take a higher level?
-You will have the option to test out of the course. Tests are offered at the beginning of every semester. Please discuss this with the course instructor.
-I have taken an Advanced Placement CS course while in high school. Do I have to take Intro to CS?
-Depending on your score, you may be able to apply the placement credit toward Intro to CS. Your Advising Dean can assist with this process; please speak with them ASAP.
-AP
-: The department grants 3 points for a score of 4 or 5 on the AP Computer Science A exam, along with an exemption from
-COMS W1004
-Introduction to Computer Science and Programming in Java. However, we recommend that you take COMS W1004 before taking COMS W3134/W3137 Data Structures if you received a score of 4 or have not programmed in Java recently.
-Barnard students
-do not earn credit for AP and should consult their Barnard Advisor.
-I'm thinking about applying to the CSMS program at Columbia. Is there a specific application for Columbia alumni?
-MS Express
-is a simplified application process that makes it easier for current CU students (or young alumni within 5 years of graduation) to apply to the CSMS program. Admissions can outline these, but in short, you have fewer documents to submit and a reduced or no fee. As for courses, the same rules apply to all CSMS students, and you can review the requirements of the CSMS program on our website here:
-https://www.cs.columbia.edu/education/ms/
-.
-If you wish to count a course you took as an undergraduate at Columbia towards the CSMS, it cannot have been used in any way – major, minor, electives, or credits – towards your undergraduate degree. This is called Advanced Standing, and up to 15 credits can be applied to the CSMS in this way. More information about applying for Advanced Standing can be found here:
-https://www.cs.columbia.edu/education/ms/regfaq/#sec16
-.
-Can I combine 1 or 2 credit projects or research to count towards the CS Electives?
-No. The rule is at least a 3-credit course at the 3000-level or higher. A 3-credit project or research course can count as an elective, but not multiples of fewer credits.
+
+Can I take Linear Algebra instead of Computational Linear Algebra? Options for the Linear Algebra requirement are COMS 3251, APMA 3101, APAM 2101, MATH 2010, or MATH 2015.
+
+Can I count COMS 3136 Essential Data Structures for the Data Structures requirement? No. You must either take Data Structures in Java (COMS 3134) or Honors Data Structures and Algorithms (COMS 3137) for fulfilling the Data Structures requirement.
+
+Which CS courses will be offered each semester? The department cannot guarantee more than 3 months in advance that a certain course will be offered during a specific semester, since course scheduling often depends on instructor availability.
+
+How can I create a program plan for my major requirements? Degree progress checklists are available on the general undergraduate info page. Students can also use Stellic to plan. CS courses are in very high demand, so students may not be able to get into their top choices each semester.
+
+Can I take a course through CVN or one of the CS department's flipped or hybrid course offerings? CVN courses are not available to undergraduate students. SEAS undergraduates are permitted to count up to 1 flipped or hybrid course per semester toward their degree. Students in CC, GS, or Barnard cannot count flipped or hybrid courses toward their degrees.
+
+I got a D in a required course. Do I need to retake it? If you are in SEAS, GS, or CC, the department will grant a one-time-only exception to count one D toward your major requirements. If this is your second D, you will need to retake the course. Barnard does not allow a D to be counted for any major or minor, including Computer Science.
+
+Can I take a course Pass/Fail and count it towards my major requirements? Unless there is a university-wide exception, students are not permitted to count courses taken Pass/Fail toward their major.
+
+Is studying abroad possible for CS majors? Studying abroad is possible for CS majors but requires careful planning. Students will need to speak with the current instructors of the Columbia courses they believe are equivalent to courses they hope to take abroad to ensure equivalency, and then speak with their CS Faculty Advisor or CS Advising to ensure the course equivalencies will fulfill major requirements. Study abroad courses approved by a CS Faculty Advisor and Advising Dean are eligible to count toward the CS major if the student earns a C or higher.
+
+Can I double count a CS major course in my minor? SEAS students can double-count a major course toward their minor. Barnard students cannot double-count, as Barnard does not allow double-counting. CC or GS students may double-count COMS W1004, any calculus courses, one Linear Algebra course, and one Probability/Statistics course with another major, minor, or concentration.
+
+What is the difference between Data Structures and Honors Data Structures? Honors Data Structures is worth 4 points and has a mandatory recitation session in addition to lectures, typically covering a few additional topics such as data structures and algorithms in functional programming languages.
+
+How can I get involved in research? The CS Department holds a Research Project Fair during the first week of each fall and spring semester. Students can also reach out directly to faculty members they are interested in working with to inquire about research opportunities in their lab.
+
+How can I do a research project for credit or write a senior thesis? Students must first find a CS faculty member who will agree to serve as their research advisor, who will then provide the direct link to register for the Thesis or Research course. A maximum of 6 points of research or project credit can count toward the major.
+
+Do I have to take ENGI 1006? What if I already know Python? Only SEAS students must take ENGI 1006. SEAS students who can demonstrate familiarity with the course content can request to waive the course, but must make up the 3 credit points by taking an extra 3000 or 4000-level CS course. Course waivers for ENGI 1006 are on an exceptional basis and are not guaranteed.
+
+How can I find a tutor for a CS course? Email CS Advising for a list of available tutors, or ask an instructor or TA for advice on tutors.
+
 CAREER DEVELOPMENT
-How do I find out about CS jobs and internships?
-Check your email! Our
-Career Placement Officers
-will send opportunities, announcements, and helpful hints from
-career@cs.columbia.edu
-. Additional opportunities are also advertised through the
-Center for Career Education
-(CCE).
-What resources does the CS department provide to help students with their professional development?
-Read all about it here!
-Questions? Email CS Advising!
-Updated 11/17/2025
-Find open faculty positions
-here
-.
-Computer Science at Columbia University
-Upcoming Events
-View All >>
-In the News
-Press Mentions
-Dean Boyce's statement on amicus brief filed by President Bollinger
-President Bollinger announced that Columbia University along with many other academic institutions (sixteen, including all Ivy League universities) filed an
-amicus brief
-in the U.S. District Court for the Eastern District of New York challenging the Executive Order regarding immigrants from seven designated countries and refugees. Among other things, the brief asserts that “safety and security concerns can be addressed in a manner that is consistent with the values America has always stood for, including the free flow of ideas and people across borders and the welcoming of immigrants to our universities.”
-This recent action provides a moment for us to collectively reflect on our community within Columbia Engineering and the importance of our commitment to maintaining an open and welcoming community for all students, faculty, researchers and administrative staff. As a School of Engineering and Applied Science, we are fortunate to attract students and faculty from diverse backgrounds, from across the country, and from around the world. It is a great benefit to be able to gather engineers and scientists of so many different perspectives and talents – all with a commitment to learning, a focus on pushing the frontiers of knowledge and discovery, and with a passion for translating our work to impact humanity.
-I am proud of our community, and wish to take this opportunity to reinforce our collective commitment to maintaining an open and collegial environment. We are fortunate to have the privilege to learn from one another, and to study, work, and live together in such a dynamic and vibrant place as Columbia.
-Sincerely,
-Mary C. Boyce
-Dean of Engineering
-Morris A. and Alma Schapiro Professor
-{{title}}
-{{month}} {{#doyear}}{{year}}{{/doyear}}
-{{day}}
-{{start}} - {{end}}
-{{#location}}
-Location:
-{{location}}
-{{/location}}
-{{#speaker}}
-Speaker:
-{{{speaker}}}{{#organization}}, {{organization}}{{/organization}}
-{{/speaker}}
-{{#series}}
-Series:
-{{series}}
-{{/series}}
-{{#nlToBr}}{{{abstract}}}{{/nlToBr}}
-{{#speaker}}{{#biography}}
-Bio
-{{{biography}}}
-{{/biography}}{{/speaker}}
-Add to GMail
-Close
-{{title}} {{fullname}}
-{{#wwwLink}}{{personal_uri}}{{/wwwLink}} {{#cvLink}}{{cv_uri}}{{/cvLink}} {{#scholarLink}}{{scholar_uri}}{{/scholarLink}}
-{{longtitle}}
-Interests:
-{{interests}}
-{{#addRoom}}{{room}}{{/addRoom}}
-{{#addPhone}}{{phone}}{{/addPhone}}
-{{{bio2}}}
-{{#showCourses}}
-Courses This Semester
-{{#courses}}
-{{title}} ({{dept}} {{prefix}}{{course_num}}-{{section}})
-{{/courses}}
-{{/showCourses}}
-{{#showBlogs}}{{{blog_posts}}}{{/showBlogs}}
-Close
+
+How do I find out about CS jobs and internships? Career Placement Officers send opportunities, announcements, and helpful hints from career@cs.columbia.edu. Additional opportunities are also advertised through the Center for Career Education.
