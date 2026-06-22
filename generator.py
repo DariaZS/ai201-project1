@@ -74,7 +74,9 @@ if __name__ == "__main__":
     test_questions = [
         "How does the Columbia housing lottery actually work?",
         "How do I register for disability accommodations at Columbia?",
-        "What GPA do I need to get into Harvard Law School?",  # not in docs
+        "What GPA do I need to get into Harvard Law School?",  
+        "What CS courses should I take first as a Columbia CS major?",
+        "What do students recommend for cheap food near Columbia?",
     ]
 
     for q in test_questions:

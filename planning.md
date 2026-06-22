@@ -32,25 +32,25 @@ Columbia University student life--specifically CS academic requirements, housing
 
 ## Chunking Strategy
 
-My documents are a mix of long guides and medium-length articles, not short reviews. I will use a chunk size of 500 characters with an overlap of 100 characters. This size is large enough to preserve a complete thought or policy explanation, while the overlap ensures taht facts that span chunk boundaries are still retrievable. Too small(under 200 characters) would strip context from policy statements like housing eligibility rules. Too large (over 1000 characters) would mix unrelated topics in one chunk, confusing retrieval.
+My documents are a mix of long guides and medium-length articles, not short reviews. I will use a chunk size of 500 characters with an overlap of 100 characters...
 
-**Chunk size:**
+**Chunk size:** 500 characters
 
-**Overlap:**
+**Overlap:** 100 characters
 
-**Reasoning:**
+**Reasoning:** Large enough to preserve a complete thought or policy explanation. Overlap ensures facts spanning chunk boundaries remain retrievable. Final implementation uses sentence-aware splitting rather than raw character count, grouping whole sentences until the chunk limit is reached.
 
 ---
 
 ## Retrieval Approach
 
-I am using all-MiniLM-L6-v2 via sentence-transformers for embeddings, running locally with no API key required. I will retrieve top-k=5 chunks per query. Five chunks gives the LLM enough context to synthesize an answer without overwhelming it with irrelevant text. Semantic search works because the embedding model maps meaning into vector space — "housing assignment process" and "room selection lottery" land near each other even without shared words. If I had no cost constraints, I would evaluate text-embedding-3-large from OpenAI for better accuracy on domain-specific academic text, or a multilingual model if expanding beyond English sources.
+I am using all-MiniLM-L6-v2 via sentence-transformers...
 
-**Embedding model:**
+**Embedding model:** all-MiniLM-L6-v2 via sentence-transformers (local, no API key)
 
-**Top-k:**
+**Top-k:** 5
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** text-embedding-3-large from OpenAI would offer better domain-specific accuracy at the cost of API pricing, latency, and data privacy concerns — significant for a tool handling student disability and academic records.
 
 ---
 
@@ -104,6 +104,6 @@ flowchart LR
 **Interface — Gradio app:** I will give Claude my domain description and the requirement that the interface accept a user question and display the generated answer along with cited sources. I expect it to produce a simple Gradio app.py with a text input, submit button, and output area. I will verify by running the app locally and confirming the UI loads and accepts input correctly.
 
 
-**Milestone 4 — Embedding and retrieval:**
+**Milestone 4 — Embedding and retrieval:** Implemented in retriever.py using ChromaDB with sentence-transformer embedding function. Tested with 3 evaluation queries, all returning relevant chunks with distance scores below 0.5.
 
-**Milestone 5 — Generation and interface:**
+**Milestone 5 — Generation and interface:** Implemented in generator.py using Groq llama-3.3-70b-versatile with strict grounding system prompt. Gradio interface built in app.py.

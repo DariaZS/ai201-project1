@@ -9,66 +9,37 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+Columbia University student life — specifically CS academic requirements, housing lottery strategy, dining options near campus, and disability accommodations. This knowledge is valuable because the most useful advice is scattered across dozens of university websites, student blogs, and campus publications rather than in one searchable place. Official sources explain policy but not strategy — a student asking "how do I actually get a good room in the housing lottery?" needs Bwog, not the housing office website.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
-
+| 1 | Columbia CS FAQ | Official university page | https://www.cs.columbia.edu/undergrad-faq/ |
+| 2 | CS Program Overview | Official university page | https://www.cs.columbia.edu/education/undergraduate/ |
+| 3 | Housing Lottery Points | Official university page | https://www.housing.columbia.edu/content/point-values-lottery-numbers-selection-appointments |
+| 4 | Room Selection Guide | Official university page | https://www.housing.columbia.edu/roomselection |
+| 5 | Bwog Housing Strategy | Student blog post | https://bwog.com/2026/02/columbia-housing-strategy-for-rising-sophomores/ |
+| 6 | ODS Registration | Official university page | https://www.health.columbia.edu/services/register-disability-services |
+| 7 | Spectator ODS Guide | Student newspaper article | https://www.columbiaspectator.com/spectrum/2022/12/04/a-guide-to-navigating-accommodations-with-disability-services/ |
+| 8 | Morningside Heights Eating | Student newspaper article | https://www.columbiaspectator.com/arts-and-culture/2022/08/26/a-beginners-guide-to-morningside-heights-eating/ |
+| 9 | Dining Halls Guide | Student blog post | https://tcadmission.com/2024/09/24/your-guide-to-the-best-dining-halls-at-columbia/ |
+| 10 | SEAS Advising Guide | Official university page | https://www.cc-seas.columbia.edu/csa/advising_seas |
 ---
 
 ## Chunking Strategy
 
-<!-- Describe your chunking approach with enough specificity that someone else could reproduce it.
-     Include:
-     - Chunk size (characters or tokens) and why that size fits your documents
-     - Overlap size and why (or why not) you used overlap
-     - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
-     - What your final chunk count was across all documents -->
+**Chunk size:** 500 characters per chunk.
 
-**Chunk size:**
+**Overlap:** 100 characters. The chunker carries the last sentence or two from each chunk into the start of the next, so facts near a boundary are retrievable from at least one chunk.
 
-**Overlap:**
+**Why these choices fit your documents:** My sources are a mix of long FAQ guides and medium-length articles, not short reviews. A 500-character chunk typically captures one complete Q&A pair or one to two paragraphs — enough semantic content for the embedding model to produce a meaningful vector. Too small (under 200 characters) would strip context from multi-sentence policy explanations. Too large (over 1000 characters) would merge unrelated topics into one chunk, diluting retrieval precision. I also switched from raw character-count splitting to sentence-aware splitting after discovering my first implementation cut chunks mid-word. The final chunker groups whole sentences until adding the next would exceed 500 characters, then closes the chunk cleanly on a sentence boundary.
 
-**Why these choices fit your documents:**
+**Preprocessing:** HTML tags stripped using BeautifulSoup. Navigation menus, footers, cookie banners, author bios, and social media prompts removed. For JavaScript-rendered pages that BeautifulSoup could not parse, article text was manually extracted from embedded JSON blobs and cleaned using Find and Replace in VS Code.
 
-**Final chunk count:**
-
----
-
-## Sample Chunks
-
-<!-- Paste 5 representative chunks from your document collection after running your ingestion pipeline.
-     For each chunk, note which source document it came from.
-     These must be actual text — not screenshots. -->
-
-| # | Source document | Chunk text |
-|---|----------------|------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+**Final chunk count:** 134 chunks across 10 documents.
 
 ---
 
@@ -82,7 +53,7 @@
 | 4 | ods_registration.txt | Disability Services reviews each request and determines eligibility for accommodations and services. The review process does not begin until your completed registration form and your disability documentation are received. The review process takes approximately three weeks. |
 | 5 | dining_halls_guide.txt | John Jay - Biggest, decent selection, has meatless mondays (which is tragic imo). JJ's Diner - Smallest, is basically just junk food, is open very late. Ferris Booth Commons - Generally has the nicest food, always decently busy. |
 
-**Total chunk count: 201 chunks across 10 documents.**
+**Total chunk count: 134 chunks across 10 documents.**
 
 This falls comfortably within the healthy range (more than 50, less than 2,000), indicating chunk size is reasonable — not so large that topics get diluted, not so small that individual chunks lose meaning.
 
@@ -90,15 +61,10 @@ Each chunk above is a complete, self-contained thought ending on a real sentence
 
 ## Embedding Model
 
-<!-- Name the embedding model you used and explain your choice.
-     Then answer: if you were deploying this system for real users and cost wasn't a constraint,
-     what tradeoffs would you weigh in choosing a different model?
-     Consider: context length limits, multilingual support, accuracy on domain-specific text,
-     latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** all-MiniLM-L6-v2 via sentence-transformers, running locally with no API key required. It produces 384-dimensional embeddings and is optimized for semantic similarity tasks.
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** For a real deployment I would evaluate text-embedding-3-large from OpenAI, which produces higher-quality embeddings on domain-specific text and supports longer context windows — useful for larger document chunks. The tradeoff is cost (API pricing per token vs. free local inference), latency (network round-trip vs. local CPU), and data privacy (student content sent to an external API vs. staying on-device). For a Columbia student tool handling potentially sensitive academic and disability-related content, the local model's privacy advantage is significant. I would also consider a multilingual model if expanding to international student communities.
 
 ---
 
@@ -195,76 +161,50 @@ Retrieved from:
 
 ## Evaluation Report
 
-<!-- Run your 5 test questions from planning.md through your system and record the results.
-     Be honest — a partially accurate or inaccurate result that you explain well is more
-     valuable than a suspiciously perfect result. -->
-
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | How does the Columbia housing lottery actually work? | Lottery numbers assigned by seniority points; seniors get lowest numbers and earliest appointments | Correctly explained point values, lottery number ranges by class year, appointment order, and Guaranteed Assignment List | Relevant | Accurate |
+| 2 | What is the best dining hall at Columbia? | Ferris Booth Commons generally considered best food quality | Retrieved dining hall descriptions and event listings but did not directly compare or rank dining halls by quality | Partially relevant | Partially accurate |
+| 3 | How do I register for disability accommodations at Columbia? | Submit registration form to ODS, takes 3 weeks to review, then meet with coordinator | Correctly described registration form, submission methods including Wien Hall drop-off, and linked to Columbia Health website, citing two sources | Relevant | Accurate |
+| 4 | What CS courses should I take first as a Columbia CS major? | ENGI E1006 and COMS W1004 recommended in freshman year | "I don't have enough information on that in my documents." — despite the answer being present in cs_faq.txt | Off-target | Inaccurate |
+| 5 | What do students recommend for cheap food near Columbia? | Fumo $12 pasta, halal cart, Absolute Bagels | Found Fumo's $12 pasta special and mentioned other nearby restaurants but missed the halal cart and most price-specific recommendations | Partially relevant | Partially accurate |
 
-**Retrieval quality:** Relevant / Partially relevant / Off-target  
+**Retrieval quality:** Relevant / Partially relevant / Off-target
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
 
 ---
 
 ## Failure Case Analysis
 
-<!-- Identify at least one question where retrieval or generation did not work as expected.
-     Write a specific explanation of *why* it failed, tied to a part of the pipeline.
+**Question that failed:** What CS courses should I take first as a Columbia CS major?
 
-     "The answer was wrong" is not an explanation.
+**What the system returned:** "I don't have enough information on that in my documents." — a refusal to answer, despite the answer being present in cs_faq.txt: "we do recommend that you start taking the introductory CS courses (ENGI E1006, COMS W1004) during your freshman year."
 
-     "The relevant information was split across a chunk boundary, so retrieval returned
-     only half the context — the model didn't have enough to answer correctly" is an explanation.
+**Root cause (tied to a specific pipeline stage):** This is a retrieval failure caused by vocabulary mismatch. The query phrase "what courses should I take first" did not semantically match the FAQ's phrasing "we recommend that you start taking the introductory CS courses." The embedding model mapped these two phrasings to different regions of the vector space, so the relevant chunk never ranked in the top 5 retrieved results. The LLM then correctly declined to answer — the generation step worked as intended — but it had nothing useful to work with because retrieval failed upstream.
 
-     "The embedding model treated the professor's nickname as out-of-vocabulary and returned
-     results from an unrelated review" is an explanation. -->
+**What you would change to fix it:** Increase top-k from 5 to 8 to cast a wider retrieval net, which would improve the chances of surfacing this chunk even with imperfect semantic matching. A more robust fix would be query rewriting — paraphrasing the user's question into several alternative phrasings before embedding, then taking the union of top results. For example, rewriting "what courses should I take first" as "recommended introductory CS courses for freshmen" before embedding would likely retrieve the correct chunk.
 
-**Question that failed:**
-
-**What the system returned:**
-
-**Root cause (tied to a specific pipeline stage):**
-
-**What you would change to fix it:**
-
----
 
 ## Spec Reflection
 
-<!-- Reflect on how planning.md shaped your implementation.
-     Answer both questions with at least 2–3 sentences each. -->
-
 **One way the spec helped you during implementation:**
+The planning.md chunking strategy section forced me to think through chunk size before writing any code. Specifying 500 characters with 100 overlap upfront meant that when my first implementation produced mid-word cuts, I had a clear target to debug toward — I knew the numbers were right but the splitting method was wrong, which led me directly to the sentence-aware fix rather than randomly adjusting parameters.
 
 **One way your implementation diverged from the spec, and why:**
+My spec assumed I would scrape all 10 sources automatically via requests and BeautifulSoup. In practice, 3 sources (housing.columbia.edu and health.columbia.edu) returned 403 errors blocking automated scraping, and 2 Spectator articles used JavaScript rendering that BeautifulSoup could not parse. I ended up manually extracting content from these 5 sources — a hybrid approach the spec did not anticipate. I updated ingest.py to check for existing clean files first, so manually-saved documents are used when scraping fails.
 
 ---
 
 ## AI Usage
 
-<!-- Describe at least 2 specific instances where you used an AI tool during this project.
-     For each: what did you give the AI as input, what did it produce, and what did you
-     change, override, or direct differently?
-
-     "I used Claude to help me code" is not sufficient.
-     "I gave Claude my Chunking Strategy section from planning.md and asked it to implement
-     chunk_text(). It returned a function using a fixed character split. I overrode the
-     chunk size from 500 to 200 because my documents are short reviews, not long guides." -->
-
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My Chunking Strategy section from planning.md, asking Claude to implement chunk_text() with 500-character chunks and 100-character overlap.
+- *What it produced:* A sliding window character-count chunker that split text every 500 characters regardless of sentence boundaries, producing fragments like "Are ther" mid-word.
+- *What I changed or overrode:* I identified the mid-word cutting problem by inspecting sample chunks, then directed Claude to rewrite the function to respect sentence boundaries. When the new version caused an infinite loop on long sentences, I diagnosed the cause (a single sentence longer than chunk_size with no escape path) and asked Claude to add a safety valve for that edge case.
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* The raw HTML of JavaScript-rendered Columbia Spectator articles, asking Claude to extract only the article body text.
+- *What it produced:* It identified the Fusion.globalContent JSON blob embedded in the page script tag and showed me the paragraph text structure inside it.
+- *What I changed or overrode:* Claude identified the pattern but I did all the actual file editing myself — using Find and Replace in VS Code to remove JSON separators and HTML tags, manually verifying each paragraph was clean before saving. I also decided to skip the author bio and social media paragraphs at the end, which Claude had included in its extraction.
