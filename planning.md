@@ -56,22 +56,6 @@ I am using all-MiniLM-L6-v2 via sentence-transformers for embeddings, running lo
 
 ## Evaluation Plan
 
-<!-- List your 5 test questions with their expected correct answers.
-     Questions should be specific enough that you can judge whether the system's response
-     is right or wrong. "What are good dining halls?" is too vague.
-     "What do students say about wait times at [dining hall name] during lunch?" is testable. -->
-
-| # | Question | Expected answer |
-|---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-
----
-## Evaluation Plan
-
 | # | Test Question | Expected Answer |
 |---|--------------|-----------------|
 | 1 | How does the Columbia housing lottery actually work? | Lottery numbers are assigned by seniority points — rising seniors get lowest numbers and earliest appointments |

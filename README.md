@@ -137,74 +137,61 @@ Relevance explanation: This query produced the strongest retrieval of all three 
 
 ## Grounded Generation
 
-<!-- Explain how your system enforces grounding — how does it prevent the LLM from answering
-     beyond the retrieved documents?
-     Describe both your system prompt (what instruction you gave the model) and any structural
-     choices (e.g., how you formatted the context, whether you filtered low-relevance chunks).
-     Do not just say "I told it to use the documents" — show the actual instruction or explain
-     the mechanism. -->
-
 **System prompt grounding instruction:**
+"You are a helpful assistant for Columbia University students. Answer questions using ONLY the information provided in the context below. Do not use any outside knowledge, even if you are confident about it. If the provided context does not contain enough information to answer the question, respond with exactly: 'I don't have enough information on that in my documents.' Always cite which source document(s) your answer came from."
 
 **How source attribution is surfaced in the response:**
+Source attribution works in two ways. First, the user message formats each retrieved chunk as "[Document N - source: filename]" so the LLM can cite specific documents inline. Second, after generation, the code programmatically collects all unique source filenames from the retrieved chunks and appends them to the response as a Sources list — this ensures attribution appears even if the LLM forgets to cite inline.
 
 ---
 
 ## Example Responses
 
-<!-- Provide at least 2 grounded responses (query + response + source attribution)
-     and 1 out-of-scope query showing your system's refusal.
-     All entries must be text — not screenshots. -->
-
 **Grounded response 1**
 
-Query:
+Query: How does the Columbia housing lottery actually work?
 
-Response:
+Response: The Columbia housing lottery works by assigning a lottery number to each group or individual, with groups receiving one lottery number (Document 1 - source: bwog_housing_strategy, Document 4 - source: housing_lottery_points). The lottery numbers determine the order of Room Selection appointments, with students having higher class standing receiving a higher point value, a lower lottery number, and an earlier Room Selection appointment time (Document 3 - source: housing_lottery_points). Individuals or groups with lottery numbers closer to 1 will have appointment times towards the beginning of Room Selection, while those with numbers closer to 5000 will have appointment times towards the end. If a room is not selected during Room Selection, students will be put on the Guaranteed Assignment List and given a housing assignment by late July.
 
-Source attribution:
+Source attribution: bwog_housing_strategy, housing_lottery_points
 
 ---
 
 **Grounded response 2**
 
-Query:
+Query: How do I register for disability accommodations at Columbia?
 
-Response:
+Response: To register for disability accommodations at Columbia, you can start by filling out the registration form or attending DS Drop-in Hours (Document 2 - source: ods_registration). You may submit the required materials via email, fax (212-854-3448), or drop them off in person at Wien Hall Suite 108A (Document 1 - source: ods_registration). A step-by-step breakdown is also available on the Columbia Health website (Document 3 - source: spectator_ods_guide).
 
-Source attribution:
+Source attribution: ods_registration, spectator_ods_guide
 
 ---
 
 **Out-of-scope query**
 
-Query:
+Query: What GPA do I need to get into Harvard Law School?
 
-System response (refusal):
+System response (refusal): I don't have enough information on that in my documents.
 
 ---
 
 ## Query Interface
 
-<!-- Describe your query interface: what are the input fields, what does the output look like?
-     Then provide a complete sample interaction transcript showing a real exchange. -->
+**Input fields:** A single text box labeled "Your question" with placeholder text "e.g. How does the housing lottery work?"
 
-**Input fields:**
-
-**Output format:**
+**Output format:** Two text boxes side by side — "Answer" (10 lines) showing the grounded LLM response with inline source citations, and "Retrieved from" (4 lines) showing a bullet list of source document filenames.
 
 ---
 
 **Sample Interaction Transcript**
 
-<!-- Show a complete query → response exchange as it actually appears in your interface.
-     Must be text — not a screenshot. -->
+User input: How does the Columbia housing lottery actually work?
 
-> **User:** 
+Answer: The Columbia housing lottery works by assigning a lottery number to each group or individual, with groups receiving one lottery number. The lottery numbers determine the order of Room Selection appointments, with students having higher class standing receiving a higher point value, a lower lottery number, and an earlier Room Selection appointment time. Individuals or groups with lottery numbers closer to 1 will have appointment times towards the beginning of Room Selection, while those with numbers closer to 5000 will have appointment times towards the end. If a room is not selected during Room Selection, students will be put on the Guaranteed Assignment List and given a housing assignment by late July, with Housing trying to keep groups together and considering building preferences. (Sources: bwog_housing_strategy, housing_lottery_points)
 
-> **System:** 
-
----
+Retrieved from:
+- bwog_housing_strategy
+- housing_lottery_points
 
 ## Evaluation Report
 
